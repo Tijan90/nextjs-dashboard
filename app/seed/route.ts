@@ -111,7 +111,10 @@ export async function GET() {
       await seedCustomers();
       await seedInvoices();
       await seedRevenue();
+      console.log(sql)
     });
+    console.log(result)
+
 
     return Response.json({ message: 'Database seeded successfully' });
   } catch (error) {
